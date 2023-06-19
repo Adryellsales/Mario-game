@@ -1,0 +1,83 @@
+*          {margin:0;
+            padding:0;
+            box-sizing:border-box;}
+
+body {
+    background: linear-gradient(#39a739, #a76539);
+}
+
+
+.game-board{width:100%;
+            height:500px;
+            border-bottom:15px solid #39a739;
+            margin:0 auto;
+            position:relative;
+            overflow:hidden;
+            background: linear-gradient(#87CEEB, #E0F6FF);}
+ 
+
+.pipe      {position:absolute;
+            bottom:0;
+            width:80px;
+            animation:pipe-animation 3s infinite linear;}
+
+.mario     {width:180px;
+           position:absolute;
+           bottom:0;}
+ 
+.jump      {animation: jump 500ms ease-out;}
+
+
+.clouds    {position:absolute;
+           width:500px;
+           animation:clouds-animation 10s infinite linear;}       
+
+@keyframes pipe-animation {from{right:-80%;}
+                           to {right:100%;}}
+
+@keyframes jump {0%{bottom:0;}
+               40%{bottom:180px;}
+               50%{bottom:180px;}
+               60%{bottom:180px;}
+              100%{bottom:0;}}
+
+@keyframes clouds-animation {from{right:-500px;}
+                              to{right:100%;}}
+
+                              
+/* TESTES ADRY */
+
+button.start, button.pause, button.reset {
+    background: greenyellow;
+    border: none;
+    width: 100px;
+    display: none;
+}
+
+.btn {
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+span {
+    font-size: 3em;
+    text-align: right;
+    color: black;
+}
+
+button.start {
+    text-align: center;
+}
+
+#contador {
+    text-align: right;
+}
+
+.img-um {
+    flex: auto;
+}
+
+#img-principal {
+    text-align: center;
+}
+
